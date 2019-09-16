@@ -3,7 +3,7 @@
 
 # 1. Xamarin Cross Platform
 Xamarin is a platform to develop applications for iOS, Android, Windows Phone, Windows Store and Mac platforms 
-using the C # programming language. It is clear that in this article we will only discuss the development of Android 
+using the C # programming language. We will only discuss the development of Android 
 and iOS because they are third-party platforms. For Windows Phone or Windows Store, if we are developers of .NET it is 
 not complicated at all, it is very similar to what we already know how to develop, only with different development 
 standards of the UI (User Interface).
