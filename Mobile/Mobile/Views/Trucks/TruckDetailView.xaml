@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Mobile.Views.Trucks.TruckDetailView"
+             Title="{Binding Truck.Make}"
+             >
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Update"  Command="{Binding UpdateCommand}" />
+        <ToolbarItem Text="Cancel"  Command="{Binding CancelCommand}" />
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Spacing="20" Padding="15">
+
+                <Label Text="Make:" FontSize="Medium" />
+                <Entry Text="{Binding Truck.Make ,Mode=TwoWay}"  FontSize="Small"/>
+                <Label x:Name="Truck_MakeError" IsVisible="False" TextColor="Red" />
+
+                <Label Text="Model:" FontSize="Medium" />
+                <Entry Text="{Binding Truck.Model,Mode=TwoWay}" FontSize="Small"/>
+                <Label x:Name="Truck_ModelError" IsVisible="False" TextColor="Red" />
+
+                <Label Text="VIN:" FontSize="Medium" />
+                <Entry Text="{Binding Truck.VIN,Mode=TwoWay}" FontSize="Small"/>
+                <Label x:Name="Truck_VINError" IsVisible="False" TextColor="Red" />
+
+                <Label Text="Color:" FontSize="Medium" />
+                <Entry Text="{Binding Truck.Color,Mode=TwoWay}" FontSize="Small"/>
+                <Label x:Name="Truck_ColorError" IsVisible="False" TextColor="Red" />
+
+                <Label Text="Year:" FontSize="Medium" />
+                <Entry Text="{Binding Truck.Year,Mode=TwoWay}" FontSize="Small"/>
+                <Label x:Name="Truck_YearError" IsVisible="False" TextColor="Red" />
+
+            </StackLayout>
+        </ScrollView>
+
+    </ContentPage.Content>
+</ContentPage>
